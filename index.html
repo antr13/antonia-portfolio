@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Antonia – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, I'm Antonia 👋</h1>
-  <p>Welcome to my developer portfolio!</p>
+  <header>
+    <div class="wrapper">
+      <div class="logo">Antonia<span>.</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="hero" id="about">
+      <h1>Hello, I'm Antonia 👋</h1>
+      <p>
+        Aspiring junior developer learning web technologies and building
+        projects to start my career in IT. I enjoy writing clean code and
+        continuously improving my skills.
+      </p>
+      <span class="tagline">Open to junior / internship roles</span>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">Basic JavaScript</span>
+        <span class="skill-pill">Git & GitHub</span>
+        <span class="skill-pill">SQL / Databases</span>
+        <span class="skill-pill">Java (fundamentals)</span>
+        <span class="skill-pill">Android (basics)</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Simple responsive portfolio page built with HTML and CSS.
+            Created to showcase my skills and serve as a base for future projects.
+          </p>
+          <div class="project-meta">
+            Tech: HTML, CSS · Status: in progress
+          </div>
+        </div>
+
+        <!-- Aici mai adăugăm proiecte noi pe viitor -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p>
+          If you’d like to talk about a junior role, internship or a small project,
+          feel free to reach out:
+        </p>
+        <p>
+          <strong>Email:</strong> antoniarosca13@yahoo.com<br />
+          <strong>GitHub:</strong> <a href="https://github.com/antr13" target="_blank">github.com/antr13</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      © <span id="year"></span> Antonia Chis · Built with HTML &amp; CSS
+    </div>
+
+    <script>
+      // setează anul automat
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
